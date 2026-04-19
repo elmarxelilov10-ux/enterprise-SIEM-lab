@@ -1,10 +1,10 @@
-###### Enterprise Network \& SIEM Architecture Lab
+### Enterprise Network \& SIEM Architecture Lab
 
 ###### 
 
 ###### 
 
-###### Overview
+#### Overview
 
 ###### This repository documents the deployment of a 3-tier enterprise network topology featuring Cisco infrastructure, a centralized Linux Syslog relay, and a Splunk Security Information and Event Management (SIEM) system hosted on a Windows Server Domain Controller.
 
