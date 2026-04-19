@@ -124,7 +124,7 @@
 
 ###### 
 
-###### Issue 1: Ubuntu Netplan Floppy I/O Error
+##### Issue 1: Ubuntu Netplan Floppy I/O Error
 
 ###### Symptom: Running sudo netplan apply triggered blk\_update\_request: I/O error, dev fd0, sector 0 errors.
 
