@@ -14,7 +14,7 @@
 
 ###### 
 
-###### Architecture \& Topology
+#### Architecture \& Topology
 
 ###### Core: R1 Cisco IOS Router  - ISP
 
@@ -36,7 +36,7 @@
 
 ###### 
 
-###### Key Objectives Achieved
+#### Key Objectives Achieved
 
 ###### Network Foundation: Established BGP routing across multiple subnets and verified Layer 3 reachability.
 
@@ -54,9 +54,9 @@
 
 ###### 
 
-###### Configuration Highlights
+#### Configuration Highlights
 
-###### 1\. Cisco Global Logging
+##### 1\. Cisco Global Logging
 
 ###### Configured network devices to timestamp logs via NTP and forward them to the Linux relay:
 
@@ -74,7 +74,7 @@
 
 ###### 
 
-###### 2\. Ubuntu rsyslog Configuration
+##### 2\. Ubuntu rsyslog Configuration
 
 ###### Opened the UDP listener and applied a routing rule to prevent network logs from cluttering the main system log:
 
@@ -104,7 +104,7 @@
 
 ###### 
 
-###### 3\. Windows Splunk Ingestion
+##### 3\. Windows Splunk Ingestion
 
 ###### Firewall: Opened inbound UDP Port 514 via wf.msc.
 
@@ -118,7 +118,7 @@
 
 ###### 
 
-###### &#x20;Real-World Troubleshooting \& Solutions :
+#### &#x20;Real-World Troubleshooting \& Solutions :
 
 ###### During deployment, several enterprise-level security protocols and virtualization quirks were identified and resolved.
 
@@ -140,7 +140,9 @@
 
 ###### sudo update-initramfs -u
 
-###### Issue 2: Cisco Port Security err-disable
+
+
+##### Issue 2: Cisco Port Security err-disable
 
 ###### Symptom: Connecting the Ubuntu VM caused an immediate interface shutdown.
 
@@ -160,7 +162,7 @@
 
 ###### &#x20;no shutdown
 
-###### Issue 3: Dynamic ARP Inspection (DAI) Blocking Servers
+##### Issue 3: Dynamic ARP Inspection (DAI) Blocking Servers
 
 ###### Symptom: The Ubuntu server could not reach its gateway. Switch logs showed %SW\_DAI-4-DHCP\_SNOOPING\_DENY.
 
@@ -180,7 +182,9 @@
 
 ###### ip arp inspection filter SERVER\_ARP\_ACL vlan 99
 
-###### Issue 4: Splunk Air-Gapped Installation
+
+
+##### Issue 4: Splunk Air-Gapped Installation
 
 ###### Symptom: The Windows DC was isolated with no NAT to the internet, preventing direct software downloads.
 
@@ -188,7 +192,7 @@
 
 ###### 
 
-###### Issue 5: Splunk Password Hash Corruption on DC
+##### Issue 5: Splunk Password Hash Corruption on DC
 
 ###### Symptom: The Splunk web interface rejected credentials post-installation.
 
